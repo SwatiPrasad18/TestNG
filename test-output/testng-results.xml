@@ -1,90 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="9" passed="6">
+<testng-results skipped="0" failed="0" ignored="13" total="24" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="94" started-at="2018-09-30T12:45:35Z" finished-at="2018-09-30T12:45:35Z">
+  <suite name="Suite" duration-ms="156" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
     <groups>
+      <group name="TestAll">
+        <method signature="PartialGroups_6.testM1()[pri:0, instance:annotations.PartialGroups_6@2a70a3d8]" name="testM1" class="annotations.PartialGroups_6"/>
+      </group> <!-- TestAll -->
       <group name="functional">
-        <method signature="Groups.tetsMethod2()[pri:0, instance:annotations.Groups@343f4d3d]" name="tetsMethod2" class="annotations.Groups"/>
-        <method signature="Groups.testMethod1()[pri:0, instance:annotations.Groups@204f30ec]" name="testMethod1" class="annotations.Groups"/>
-        <method signature="Groups.tetsMethod2()[pri:0, instance:annotations.Groups@204f30ec]" name="tetsMethod2" class="annotations.Groups"/>
+        <method signature="Groups_2.tetsMethod2()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="tetsMethod2" class="annotations.Groups_2"/>
+        <method signature="Groups_2.testMethod1()[pri:0, instance:annotations.Groups_2@37374a5e]" name="testMethod1" class="annotations.Groups_2"/>
+        <method signature="Groups_2.tetsMethod2()[pri:0, instance:annotations.Groups_2@37374a5e]" name="tetsMethod2" class="annotations.Groups_2"/>
       </group> <!-- functional -->
+      <group name="funct">
+        <method signature="ExcludeGroups_5.testMethod4()[pri:0, instance:annotations.ExcludeGroups_5@1d371b2d]" name="testMethod4" class="annotations.ExcludeGroups_5"/>
+      </group> <!-- funct -->
       <group name="smoke">
-        <method signature="Groups.testMethod3()[pri:0, instance:annotations.Groups@343f4d3d]" name="testMethod3" class="annotations.Groups"/>
-        <method signature="Groups.testMethod4()[pri:0, instance:annotations.Groups@343f4d3d]" name="testMethod4" class="annotations.Groups"/>
-        <method signature="Groups.tetsMethod2()[pri:0, instance:annotations.Groups@343f4d3d]" name="tetsMethod2" class="annotations.Groups"/>
-        <method signature="Groups.tetsMethod2()[pri:0, instance:annotations.Groups@204f30ec]" name="tetsMethod2" class="annotations.Groups"/>
+        <method signature="Groups_2.testMethod3()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="testMethod3" class="annotations.Groups_2"/>
+        <method signature="Groups_2.testMethod4()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="testMethod4" class="annotations.Groups_2"/>
+        <method signature="Groups_2.tetsMethod2()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="tetsMethod2" class="annotations.Groups_2"/>
+        <method signature="Groups_2.tetsMethod2()[pri:0, instance:annotations.Groups_2@37374a5e]" name="tetsMethod2" class="annotations.Groups_2"/>
+        <method signature="GroupOfGroups_4.testMethod1()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod1" class="annotations.GroupOfGroups_4"/>
+        <method signature="GroupOfGroups_4.testMethod2()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod2" class="annotations.GroupOfGroups_4"/>
       </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="GroupOfGroups_4.testMethod2()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod2" class="annotations.GroupOfGroups_4"/>
+        <method signature="GroupOfGroups_4.testMethod3()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod3" class="annotations.GroupOfGroups_4"/>
+      </group> <!-- sanity -->
+      <group name="F1">
+        <method signature="PartialGroups_6.testM1()[pri:0, instance:annotations.PartialGroups_6@2a70a3d8]" name="testM1" class="annotations.PartialGroups_6"/>
+      </group> <!-- F1 -->
     </groups>
-    <test name="Simple" duration-ms="32" started-at="2018-09-30T12:45:35Z" finished-at="2018-09-30T12:45:35Z">
-      <class name="annotations.Sequence">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:annotations.Sequence@5b275dab]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+    <test name="Simple" duration-ms="31" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+      <class name="annotations.Sequence_1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:annotations.Sequence@5b275dab]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testM1()[pri:0, instance:annotations.Sequence@5b275dab]" name="testM1" duration-ms="16" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testM1 -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:annotations.Sequence@5b275dab]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:annotations.Sequence@5b275dab]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="testM1()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="testM1" duration-ms="15" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:annotations.Sequence@5b275dab]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        </test-method> <!-- testM1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:annotations.Sequence@5b275dab]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- annotations.Sequence -->
-    </test> <!-- Simple -->
-    <test name="Regression" duration-ms="16" started-at="2018-09-30T12:45:35Z" finished-at="2018-09-30T12:45:35Z">
-      <class name="annotations.Groups">
-        <test-method status="PASS" signature="testMethod3()[pri:0, instance:annotations.Groups@343f4d3d]" name="testMethod3" duration-ms="16" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod3 -->
-        <test-method status="PASS" signature="testMethod4()[pri:0, instance:annotations.Groups@343f4d3d]" name="testMethod4" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        </test-method> <!-- afterClass -->
+      </class> <!-- annotations.Sequence_1 -->
+    </test> <!-- Simple -->
+    <test name="Regression" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+      <class name="annotations.Groups_2">
+        <test-method status="PASS" signature="testMethod4()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="testMethod4" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod4 -->
-        <test-method status="PASS" signature="tetsMethod2()[pri:0, instance:annotations.Groups@343f4d3d]" name="tetsMethod2" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="testMethod3()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="testMethod3" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method status="PASS" signature="tetsMethod2()[pri:0, instance:annotations.Groups_2@6a1aab78]" name="tetsMethod2" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tetsMethod2 -->
-      </class> <!-- annotations.Groups -->
+      </class> <!-- annotations.Groups_2 -->
     </test> <!-- Regression -->
-    <test name="Functional" duration-ms="0" started-at="2018-09-30T12:45:35Z" finished-at="2018-09-30T12:45:35Z">
-      <class name="annotations.Groups">
-        <test-method status="PASS" signature="tetsMethod2()[pri:0, instance:annotations.Groups@204f30ec]" name="tetsMethod2" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tetsMethod2 -->
-        <test-method status="PASS" signature="testMethod1()[pri:0, instance:annotations.Groups@204f30ec]" name="testMethod1" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+    <test name="Functional" duration-ms="15" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+      <class name="annotations.Groups_2">
+        <test-method status="PASS" signature="testMethod1()[pri:0, instance:annotations.Groups_2@37374a5e]" name="testMethod1" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-      </class> <!-- annotations.Groups -->
-      <class name="annotations.Sequence">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:annotations.Sequence@5b275dab]" name="beforeSuite" is-config="true" duration-ms="15" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="tetsMethod2()[pri:0, instance:annotations.Groups_2@37374a5e]" name="tetsMethod2" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsMethod2 -->
+      </class> <!-- annotations.Groups_2 -->
+    </test> <!-- Functional -->
+    <test name="Group Methods" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+    </test> <!-- Group Methods -->
+    <test name="Group of Groups" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+      <class name="annotations.GroupOfGroups_4">
+        <test-method status="PASS" signature="testMethod3()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod3" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method status="PASS" signature="testMethod1()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod1" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method status="PASS" signature="testMethod2()[pri:0, instance:annotations.GroupOfGroups_4@5891e32e]" name="testMethod2" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+      </class> <!-- annotations.GroupOfGroups_4 -->
+    </test> <!-- Group of Groups -->
+    <test name="Excluding Test" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+      <class name="annotations.ExcludeGroups_5">
+        <test-method status="PASS" signature="testMethod4()[pri:0, instance:annotations.ExcludeGroups_5@1d371b2d]" name="testMethod4" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+      </class> <!-- annotations.ExcludeGroups_5 -->
+    </test> <!-- Excluding Test -->
+    <test name="Partial Groups" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+      <class name="annotations.Sequence_1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:annotations.Sequence@5b275dab]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-09-30T18:15:35Z" finished-at="2018-09-30T18:15:35Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:annotations.Sequence_1@6043cd28]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- annotations.Sequence -->
-    </test> <!-- Functional -->
+      </class> <!-- annotations.Sequence_1 -->
+      <class name="annotations.PartialGroups_6">
+        <test-method status="PASS" signature="testM1()[pri:0, instance:annotations.PartialGroups_6@2a70a3d8]" name="testM1" duration-ms="0" started-at="2018-10-05T10:36:12Z" finished-at="2018-10-05T10:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testM1 -->
+      </class> <!-- annotations.PartialGroups_6 -->
+    </test> <!-- Partial Groups -->
   </suite> <!-- Suite -->
 </testng-results>

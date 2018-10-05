@@ -2,7 +2,7 @@ package annotations;
 
 import org.testng.annotations.Test;
 
-public class Groups{
+public class Groups_2{
 	@Test(groups = {"functional"})
 	public void testMethod1()
 	{

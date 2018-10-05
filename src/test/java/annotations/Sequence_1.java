@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Sequence {
+public class Sequence_1 {
 
 	@BeforeSuite
 	public void beforeSuite()

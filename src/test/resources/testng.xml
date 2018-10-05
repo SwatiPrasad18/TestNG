@@ -1,32 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" verbose="10">
-	<test thread-count="5" name="Simple">
+<suite name="Suite" verbose="10" parallel="none">
+	<test name="Simple">
 		<classes>
-			<class name="annotations.Sequence" />
+			<class name="annotations.Sequence_1" />
 		</classes>
 	</test> <!-- Test -->
 
 	<test name="Regression">
-	<groups>
-		<run>
-			<include name="smoke"></include>
-		</run>
-	</groups>
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
 		<classes>
-			<class name="annotations.Groups" />
+			<class name="annotations.Groups_2" />
 		</classes>
 	</test>
-	
-	<test name ="Functional">
-	<groups>
-		<run>
-			<include name="functional"></include>
-		</run>
-	</groups>
-	
-	<classes>
-		<class name="annotations.Groups"></class>
-	</classes>
+
+	<test name="Functional">
+		<groups>
+			<run>
+				<include name="functional"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="annotations.Groups_2"></class>
+		</classes>
+	</test>
+
+	<test name="Group Methods">
+		<classes>
+			<class name="annotations.MethodGroups_3">
+				<methods>
+					<include name="enabledTestMethod.*"></include>
+					<exclude name="disabledTestMethod.*"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Group of Groups">
+		<groups>
+			<define name="All">
+				<include name="smoke"></include>
+				<include name="sanity"></include>
+			</define>
+
+			<define name="System">
+				<include name="unix"></include>
+				<include name="windows"></include>
+			</define>
+
+			<run>
+				<include name="All"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="annotations.GroupOfGroups_4"></class>
+		</classes>
+	</test>
+
+	<test name="Excluding Test">
+		<groups>
+			<run>
+				<include name="funct"></include>
+				<exclude name="broken"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="annotations.ExcludeGroups_5"></class>
+		</classes>
+	</test>
+
+	<test name="Partial Groups">
+		<groups>
+			<run>
+				<include name="TestAll"></include>
+				<exclude name="F2"></exclude>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="annotations.PartialGroups_6"></class>
+		</classes>
 	</test>
 </suite> <!-- Suite -->
